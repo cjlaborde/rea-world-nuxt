@@ -5,6 +5,27 @@
   </div>
 </template>
 
+
+<script>
+export default {
+  head() {
+    return {
+      // titleTemplate is the title every page should use
+      titleTemplate: "%s - Real World Events",
+      meta: [
+        {
+          // hid ensures there is only one description meta tag
+          hid: "description",
+          name: "description",
+          content:
+            "Where you can find all the events taking place in your neighborhood",
+        },
+      ],
+    };
+  },
+};
+</script>
+
 <style>
 html {
   -webkit-text-size-adjust: 100%;
